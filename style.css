@@ -1,40 +1,7 @@
 
-
-.rubik-family {
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.pt-sans-regular {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .pt-sans-bold {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .pt-sans-regular-italic {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .pt-sans-bold-italic {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-
-
 .container{
     min-height: 100vh;
-    background-color: blue;
+    /* background-color: rgb(65, 65, 243); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,4 +38,80 @@
   background-color: red;
   color: white;
 }
+
+.navbar-light {
+  background-color: blue;
+  height: 412px;
+}
+
+.bg-light {
+  background-color: blue !important;
+}
+
+body {
+  margin: 0px;
+  background-color: antiquewhite;
+}
+
+.container-fluid {
+  color: lightgray;
+}
+
+.logo-img img{
+  margin-bottom: 20px ;
+  height: 60px;
+  padding-left: 10px;
+  
+}
+
+.card {
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.end-container {
+  border: none;
+  min-height: 412px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.winning-headline{
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 24px;
+  
+}
+
+.padding-bottom-24px {
+  padding-bottom: 24px;
+}
+
+.startscreen {
+  background-image: url("./img/brainbg.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  height: 406px;
+  background-color: white;
+  width: 350px;
+  background-size: 400px;
+  background-position: center;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.progress {
+  margin-bottom: 8px;
+}
+
+
+
+
 

@@ -61,6 +61,7 @@ function showQuestion() {
     else {
         updateProgressBar();
         updateToNextQuestion();
+        highlightCategorie()
     }
 }
 
@@ -135,7 +136,27 @@ function resetAnswerButtons() {
 function restartGame() {
     document.getElementById('question-body').style = '';
     document.getElementById('endscreen').style = 'display: none';
+    document.getElementById('question-categorie5').style.color = 'white';
     rightQuestions = 0;
     currentQuestion = 0;
     init();
+}
+
+function highlightCategorie(){
+    for (let i = 0; i < questions.length; i++) {
+        let category = document.getElementById(`question-categorie${i}`);
+        if(category) {
+            category.style.color = 'white';
+        }
+    }
+    let currentCategorie = document.getElementById(`question-categorie${currentQuestion + 1}`);
+    if (currentCategorie) {
+        currentCategorie.style.color = 'green';
+}
+}
+
+function openStartScreen(){
+    document.getElementById('startscreen').style.display = 'none';
+    document.getElementById('questions-closed').style.display = '';
+    
 }
